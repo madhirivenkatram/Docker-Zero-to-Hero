@@ -10,6 +10,8 @@ ENV GO111MODULE=off
 
 COPY . .
 
+password= "passw!@#"
+
 RUN CGO_ENABLED=0 go build -o /app .
 
 ENTRYPOINT ["/app"]
